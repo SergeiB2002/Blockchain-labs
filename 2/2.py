@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from __future__ import annotations
 
 import argparse
@@ -51,7 +50,7 @@ def fetch_fee_rate_sat_vb() -> int:
 
 
 def estimate_vbytes_p2wpkh(n_in: int, n_out: int) -> int:
-    # приближённо, достаточно для практики
+    # приближённо
     return 10 + n_in * 68 + n_out * 31
 
 
